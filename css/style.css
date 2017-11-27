@@ -261,7 +261,7 @@ header #header-middle p{
     text-align: center;
     background-color: #fbfbfb;
 }
-#section-services .inner:hover{
+#section-services .middle{
     background-color: #ededed;
 }
 #section-services .inner h2{
@@ -359,6 +359,7 @@ header #header-middle p{
     text-transform: uppercase;
     display: inline-block;
     border-radius: 5px;
+    cursor: pointer;
 }
 #section-jobs .inner .job-application-mob a{
     padding: 10px 30px;
@@ -372,24 +373,21 @@ header #header-middle p{
     float: right;
     margin-top: 10px;
     display: none;
+    cursor: pointer;
 }
-#section-jobs .inner:hover{
+#section-jobs .even{
     background-color: #222222;
 }
-#section-jobs .inner:hover h2,
-#section-jobs .inner:hover p,
-#section-jobs .inner:hover ul li,
-#section-jobs .inner:hover .job-application a{
+#section-jobs .even h2,
+#section-jobs .even p,
+#section-jobs .even ul li,
+#section-jobs .even .job-application a{
     color: #bebebe; 
 }
-#section-jobs .inner:hover .job-application a{
+#section-jobs .even .job-application a{
     border-color: #bebebe; 
 }
-#section-jobs .inner:hover .job-application a:hover{
-    color: #222222; 
-    border-color: #222222;
-    background-color: #bebebe;
-}
+
 #section-jobs #jobs-bottom{
     text-align: center;
     padding: 95px 0 0;
@@ -629,19 +627,19 @@ footer .footer-bottom ul li a span{
         border: none;
         padding: 10px 10px 10px 0;
     }
-    #section-jobs .inner:hover {
+    #section-jobs .even {
         background-color: #f8f7f5;
     }
-    #section-jobs .inner:hover h2{
+    #section-jobs .even h2{
         color: rgb( 34, 34, 34 );
     }
-    #section-jobs .inner:hover p{
+    #section-jobs .even p{
         color: rgb( 34, 34, 34 );
     } 
-    #section-jobs .inner:hover ul li{
+    #section-jobs .even ul li{
         color: rgb( 196, 18, 48 );
     }
-    #section-jobs .inner:hover .job-application a {
+    #section-jobs .even .job-application a {
         color: rgb( 34, 34, 34 );
     }
     #section-about {
