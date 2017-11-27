@@ -391,6 +391,7 @@ header #header-middle p{
 #section-jobs #jobs-bottom{
     text-align: center;
     padding: 95px 0 0;
+    
 }
 #section-jobs #more-jobs{
     display: none;
@@ -403,6 +404,7 @@ header #header-middle p{
     background: #efefef;
     padding: 20px 23px;
     border: none;
+    cursor: pointer;
 }
 /* End Of Section Jobs */
 
