@@ -1,0 +1,680 @@
+
+@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|fontawesome|fontelico|iconicfill|iconicstroke|maki|openwebicons|typicons|zocial);
+@font-face {
+    font-family: Helvetica-Normal;
+    src: url('../fonts/helvetica-normal.ttf');
+}
+/* brandico */
+[class*="brandico-"]:before {
+    font-family: 'brandico', sans-serif;
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+/* fontelico */
+[class*="fontelico-"]:before {
+    font-family: 'fontelico', sans-serif;
+}
+
+/* iconicfill */
+[class*="iconicfill-"]:before {
+    font-family: 'IconicFill', sans-serif;
+}
+
+/* iconicstroke */
+[class*="iconicstroke-"]:before {
+    font-family: 'IconicStroke', sans-serif;
+}
+
+/* maki */
+[class*="maki-"]:before {
+    font-family: 'maki', sans-serif;
+}
+
+/* openwebicons */
+[class*="openwebicons-"]:before {
+    font-family: 'OpenWeb Icons', sans-serif;
+}
+
+/* typicons */
+[class*="typicons-"]:before {
+    font-family: 'Typicons', sans-serif;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+    font-family: 'zocial', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+*, a{
+    -webkit-outline: none !important;
+    -moz-outline: none !important;
+    -ms-outline: none !important;
+    -o-outline: none !important;
+    outline: none !important;
+}
+a:link,
+a:hover,
+a:visited{
+    text-decoration: none;
+    cursor: pointer;
+}
+*, .row, ul {
+    margin: 0;
+    padding: 0;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    opacity: 1;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    opacity: 1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    opacity: 1;
+}
+:-moz-placeholder { /* Firefox 18- */
+    opacity: 1;
+}
+.clear{
+    clear: both;
+}
+.container{
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Header */
+header{
+    height: 100vh;
+    background: url('../images/bg-header.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: relative;
+}
+header .owerwolf{
+    background-color: rgba(255,255,255,0.3);
+    height: 100%;
+    width: 100%;
+}
+header #menu {
+    width: 100%;
+    padding-top: 30px;
+}
+header #menu ul{
+    text-align: right;
+}
+header #menu ul li {
+    display: inline-block;
+    padding: 15px 20px;
+}
+header #menu ul li a{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: rgb( 34, 34, 34 );
+    font-size: 14px;
+}
+header #header-middle{
+    width: 100%;
+    max-width: 630px;
+    margin: 125px auto 0;
+    text-align: center;
+}
+header #header-middle h1{
+    font-size: 62px;
+    font-family: "Roboto";
+    color: rgb( 34, 34, 34 );
+    text-transform: uppercase;
+}
+header #header-middle hr{
+    width: 60px;
+    margin: 30px auto 45px;
+    background-color: #ce4c5e;
+    border: none;
+    height: 2px;
+}
+header #header-middle p{
+    font-size: 24px;
+    font-family: "Helvetica-Normal";
+    color: rgb( 34, 34, 34 );
+    margin: 0 65px;
+}
+.mySlides {display:none}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* End Of Mob Menu */
+.mob-drop{
+    float: right;
+    display: none;
+    margin-right: 30px;
+    font-size: 30px;
+}
+.mob-menu{
+    background: rgba(53,53,53,0.9);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 80px;
+    z-index: 9999;
+    padding-top: 100px;
+    display: none;
+}
+.mob-menu ul {
+    text-align: center;
+}
+.mob-menu ul li{
+    margin: 25px 0;
+    list-style: none;
+}
+.mob-menu ul li a{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: "Roboto";
+    color: rgb( 204, 204, 204 );
+    font-weight: 300;
+}
+.mob-menu .mob-menu-bottom{
+    position: absolute;
+    bottom: 35px;
+    left: 20px;
+    right: 0;
+}
+.mob-menu .mob-menu-bottom p{
+    float: left;  
+    width: 60%;
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgb( 204, 204, 204 );
+    font-weight: 300;
+}
+.mob-menu .mob-menu-bottom ul{
+    float: left; 
+    text-align: right;
+    width: 40%;
+}
+.mob-menu .mob-menu-bottom ul li{
+    display: inline-block;
+    margin: -10px 25px 0 0;
+}
+/* End Of Header */
+
+/* Section Services */
+
+#section-services .inner{
+    padding: 90px 60px 70px;
+    text-align: center;
+    background-color: #fbfbfb;
+}
+#section-services .inner:hover{
+    background-color: #ededed;
+}
+#section-services .inner h2{
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb( 34, 34, 34 );
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+#section-services .inner hr{
+    width: 50px;
+    margin: 35px auto 40px;
+    background-color: #c4c4c4;
+    border: none;
+    height: 2px;
+}
+#section-services .inner p{
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgb( 102, 102, 102 );
+}
+/* End Of Section Services */
+
+/* Section Jobs */
+#section-jobs{
+    padding: 140px 0;
+}
+#section-jobs #jobs-top{
+    text-align: center;
+    padding-bottom: 75px;
+}
+#section-jobs #jobs-top h3{
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb( 153, 153, 153 );
+    margin-bottom: 45px;
+    text-transform: uppercase;
+}
+#section-jobs #jobs-top h2{
+    font-size: 50px;
+    font-family: "Roboto";
+    color: rgb( 34, 34, 34 );
+    text-transform: uppercase;
+}
+#section-jobs #jobs-top hr{
+    width: 60px;
+    margin: 40px auto 65px;
+    background-color: #c41230;
+    border: none;
+    height: 2px;
+}
+#section-jobs #jobs-top p{
+    font-size: 24px;
+    font-family: "Roboto";
+    color: rgb( 34, 34, 34 );
+    font-weight: 300;
+    margin: 0 70px 10px;
+}
+#section-jobs .inner{
+    padding: 52px 0;
+}
+#section-jobs .inner h2{
+    font-size: 20px;
+    font-family: "Roboto";
+    color: rgb( 34, 34, 34 );
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+#section-jobs .inner p {
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb( 34, 34, 34 );
+    margin-bottom: 35px;
+}
+#section-jobs .inner ul li{
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb( 196, 18, 48 );
+    display: inline-block;
+    border: solid 1px #cecece;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: default;
+}
+#section-jobs .inner .job-application{
+    text-align: right;
+}
+#section-jobs .inner .job-application a{
+    padding: 15px 40px;
+    border: 1px solid #222222;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb( 34, 34, 34 );
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 5px;
+}
+#section-jobs .inner .job-application-mob a{
+    padding: 10px 30px;
+    border: 1px solid #222222;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb( 34, 34, 34 );
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 5px;
+    float: right;
+    margin-top: 10px;
+    display: none;
+}
+#section-jobs .inner:hover{
+    background-color: #222222;
+}
+#section-jobs .inner:hover h2,
+#section-jobs .inner:hover p,
+#section-jobs .inner:hover ul li,
+#section-jobs .inner:hover .job-application a{
+    color: #bebebe; 
+}
+#section-jobs .inner:hover .job-application a{
+    border-color: #bebebe; 
+}
+#section-jobs .inner:hover .job-application a:hover{
+    color: #222222; 
+    border-color: #222222;
+    background-color: #bebebe;
+}
+#section-jobs #jobs-bottom{
+    text-align: center;
+    padding: 95px 0 0;
+}
+#section-jobs #more-jobs{
+    display: none;
+}
+#section-jobs #jobs-bottom button{
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb( 51, 51, 51 );
+    text-transform: uppercase;
+    background: #efefef;
+    padding: 20px 23px;
+    border: none;
+}
+/* End Of Section Jobs */
+
+/* Section About */
+#section-about{
+    padding: 90px 0;
+    background: #fbfbfb;
+}
+#section-about h3{
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb( 153, 153, 153 );
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+#section-about h2{
+    font-size: 50px;
+    font-family: "Roboto";
+    color: rgb( 34, 34, 34 );
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+#section-about p{
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb( 34, 34, 34 );
+    margin-bottom: 35px;
+    font-weight: 300;
+}
+#section-about hr{
+    width: 60px;
+    margin: 50px auto 60px;
+    background-color: #c41230;
+    border: none;
+    height: 2px;
+}
+/* End Of Section About */
+
+/* Section Socialt */
+#section-social{
+    padding: 105px 0;
+    text-align: center;
+}
+#section-social h3{
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb( 153, 153, 153 );
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+#section-social ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 64px;
+    height: 64px;
+}
+#section-social ul .twitter{
+    background: #20b9ff;
+}
+#section-social ul .facebook{
+    background: #3c5a9a;
+}
+#section-social ul li a{
+    font-size: 28px;
+    color: #fff;
+    margin-top: 15px;
+    display: inline-block;
+}
+/* End Of Section Socialt */
+
+/* Footer */
+footer{
+    background-color: #222222;
+}
+footer .footer-top{
+    padding: 135px 0 100px;
+}
+footer .footer-top h3{
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgb( 242, 242, 242 );
+    margin-bottom: 25px;
+}
+footer .footer-top h3 img{
+    margin-right: 10px;
+}
+footer .footer-top p{
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb( 102, 102, 102 );
+}
+footer .footer-top .footer-top-bottom-links{
+    display: none;
+}
+footer .footer-bottom{
+    padding: 30px 0;
+    background-color: #1e1e1e;
+}
+footer .footer-bottom p{
+    font-size: 12px;
+    font-family: "Roboto";
+    color: rgb( 102, 102, 102 ); 
+}
+footer .footer-top .footer-top-bottom-links ul li,
+footer .footer-bottom ul li{
+    display: inline; 
+    margin-left: 25px;
+}
+footer .footer-top .footer-top-bottom-links ul li a,
+footer .footer-bottom ul li a{
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgb( 102, 102, 102 );
+}
+footer .footer-top .footer-top-bottom-links ul li a span,
+footer .footer-bottom ul li a span{
+    font-size: 25px;
+}
+/* End Of Footer */
+@media ( max-width: 1030px ){
+    .menu-nav{
+        display: none;
+    }
+    .mob-drop{
+        display: block;
+    }
+}
+
+@media ( min-width: 737px ) and ( max-width: 1030px ){
+    #section-services .inner {
+        padding: 45px 20px 70px;
+    }
+    footer .footer-bottom ul{
+        text-align: right;
+    }
+    #section-jobs .inner {
+        padding: 20px 10px;
+    }
+    #section-about {
+        padding: 90px 20px;
+    }
+    footer .footer-top {
+        padding: 135px 20px 100px;
+    }
+    footer .footer-bottom {
+        padding: 30px 20px;
+    }
+}
+@media ( max-width: 736px ){
+    .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11{
+        width: 100%;
+    }
+    header {
+        background-size: cover;
+        background-position: center;
+    }
+    header #menu .col-6{
+        width:50%;
+    }
+    header #menu {
+        padding-top: 15px;
+    }
+    .mob-menu{
+        top: 60px;
+    }
+    header #header-middle {
+        margin: 65px auto 0;
+    }
+    header #header-middle h1 {
+        font-size: 30px;
+    }
+    header #header-middle p {
+        font-size: 18px;
+    }
+    .mob-drop{
+        margin-right: 20px;
+    }
+    header .logo{
+        margin-left:20px;
+    }
+    #section-services .inner {
+        padding: 50px 20px 65px;
+    }
+    #section-jobs {
+        padding: 90px 0;
+    }
+    #section-jobs #jobs-top p {
+        font-size: 20px;
+        margin: 0 20px 10px;
+    }
+    #section-jobs #jobs-top h2 {
+        font-size: 40px;
+    }
+    #section-jobs #jobs-top hr {
+        margin: 40px auto 40px;
+    }
+    #section-jobs .inner .job-application {
+        display: none;
+    }
+    #section-jobs .inner .job-application-mob a{
+        display: block;
+    }
+    #section-jobs .inner {
+        padding: 20px 10px;
+    }
+    #section-jobs .inner h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    #section-jobs .inner p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    #section-jobs .inner ul li {
+        border: none;
+        padding: 10px 10px 10px 0;
+    }
+    #section-jobs .inner:hover {
+        background-color: #f8f7f5;
+    }
+    #section-jobs .inner:hover h2{
+        color: rgb( 34, 34, 34 );
+    }
+    #section-jobs .inner:hover p{
+        color: rgb( 34, 34, 34 );
+    } 
+    #section-jobs .inner:hover ul li{
+        color: rgb( 196, 18, 48 );
+    }
+    #section-jobs .inner:hover .job-application a {
+        color: rgb( 34, 34, 34 );
+    }
+    #section-about {
+        padding: 40px 20px 30px;
+    }
+    #section-social {
+        padding: 80px 0;
+    }
+    footer .footer-top {
+        padding: 85px 30px 30px;
+    }
+    footer .footer-top .footer-top-bottom-links{
+        display: block;
+    }
+    footer .footer-bottom {
+        padding: 10px 20px 30px;
+    }
+    footer .footer-bottom-links{
+        display: none;
+    }
+    footer .footer-top .footer-top-bottom-links ul{
+        position: relative;
+    }
+    footer .footer-top .footer-top-bottom-links ul li{
+        margin-left: 0px;
+    }
+    footer .footer-top .footer-top-bottom-links ul li a span {
+        margin-right: 25px;
+    }
+    footer .footer-top .location{
+        margin-bottom:50px;
+    }
+    footer .footer-top .footer-top-bottom-links ul li .site-link{
+        position: absolute;
+        top: 9px;
+        right: 57px;
+    }
+}
+
