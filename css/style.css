@@ -538,6 +538,9 @@ footer .footer-bottom ul li a span{
 }
 
 @media ( min-width: 737px ) and ( max-width: 1030px ){
+     header .logo{
+        margin-left:20px;
+    }
     #section-services .inner {
         padding: 45px 20px 70px;
     }
